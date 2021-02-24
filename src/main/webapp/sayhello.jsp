@@ -41,11 +41,8 @@
 		        <h2>SayHello.jsp</h2>
 		        <% String lang = request.getParameter("lang"); %>
 		        <jsp:setProperty name="myBean" property="msg" value="<%=lang%>"/>
-		        <h3>Seu nome é:</h3> 
 		        <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>!
-		        <h3>Seu estado é:</h3> 
 		        <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("estado")%>!
-		        <h3>Seu email é:</h3> 
 		        <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("email")%>!
 	    	</div>
     	</section>
