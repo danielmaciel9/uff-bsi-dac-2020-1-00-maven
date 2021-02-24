@@ -24,18 +24,23 @@ and open the template in the editor.
         	}
         	h2{
         		margin-bottom: 30px;
+        		margin-top: 30px;
         	}
         </style>
     </head>
     <body>
     	<section>
-    		<div class="container-fluid">
+    		<div class="container">
 	    		<h2>Formulário de HelloWorld (usando o sayhello.jsp)</h2>
 	           	<form action="sayhello.jsp" method="post">
 		           	<div class="form-group">
 			        	<label for="nome">Nome:</label> 
 			        	<input type="text" name="nome" class="form-control"/>
 		        	</div>
+		        	<div class="form-group">
+					    <label for="email">Email:</label>
+					    <input type="email" class="form-control" id="email" name="email">
+					</div>
 		           	<div class="form-group">
 			           	<label for="nome">Idioma:</label> 
 			           	<input class="form-check-input" type="radio" name="lang" value="pt" checked> Português
