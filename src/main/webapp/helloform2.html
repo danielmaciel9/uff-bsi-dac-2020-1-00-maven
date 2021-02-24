@@ -16,53 +16,55 @@ and open the template in the editor.
     </head>
     <body>
     	<section>
-    		<h2>Formulário de HelloWorld (usando o sayhello.jsp)</h2>
-           	<form action="sayhello.jsp" method="post">
-	           	<div class="form-group">
-		        	<label for ="nome">Nome:</label> 
-		        	<input type="text" name="nome"/>
-	        	</div>
-	           	<div class="form-group">
-		           	<label for ="nome">Idioma:</label> 
-		           	<input class="form-check-input" type="radio" name="lang" value="pt" checked> Português
-		           	<input class="form-check-input" type="radio" name="lang" value="en"> Inglês
-		           	<input class="form-check-input" type="radio" name="lang" value="fr"> Francês
-		           	<input class="form-check-input" type="radio" name="lang" value="de"> Alemão
-		        </div>
-		        <div class="form-group">
-		           	<select class="form-control" id="estado" name="estado">
-					    <option value="AC">Acre</option>
-					    <option value="AL">Alagoas</option>
-					    <option value="AP">Amapá</option>
-					    <option value="AM">Amazonas</option>
-					    <option value="BA">Bahia</option>
-					    <option value="CE">Ceará</option>
-					    <option value="DF">Distrito Federal</option>
-					    <option value="ES">Espírito Santo</option>
-					    <option value="GO">Goiás</option>
-					    <option value="MA">Maranhão</option>
-					    <option value="MT">Mato Grosso</option>
-					    <option value="MS">Mato Grosso do Sul</option>
-					    <option value="MG">Minas Gerais</option>
-					    <option value="PA">Pará</option>
-					    <option value="PB">Paraíba</option>
-					    <option value="PR">Paraná</option>
-					    <option value="PE">Pernambuco</option>
-					    <option value="PI">Piauí</option>
-					    <option value="RJ">Rio de Janeiro</option>
-					    <option value="RN">Rio Grande do Norte</option>
-					    <option value="RS">Rio Grande do Sul</option>
-					    <option value="RO">Rondônia</option>
-					    <option value="RR">Roraima</option>
-					    <option value="SC">Santa Catarina</option>
-					    <option value="SP">São Paulo</option>
-					    <option value="SE">Sergipe</option>
-					    <option value="TO">Tocantins</option>
-					    <option value="EX">Estrangeiro</option>
-				   </select>
-				  </div>
-	           <input type="submit" class="btn btn-primary" value="Cumprimentar"/>
-	        </form>
+    		<div class="container-fluid">
+	    		<h2>Formulário de HelloWorld (usando o sayhello.jsp)</h2>
+	           	<form action="sayhello.jsp" method="post">
+		           	<div class="form-group">
+			        	<label for ="nome">Nome:</label> 
+			        	<input type="text" name="nome"/>
+		        	</div>
+		           	<div class="form-group">
+			           	<label for ="nome">Idioma:</label> 
+			           	<input class="form-check-input" type="radio" name="lang" value="pt" checked> Português
+			           	<input class="form-check-input" type="radio" name="lang" value="en"> Inglês
+			           	<input class="form-check-input" type="radio" name="lang" value="fr"> Francês
+			           	<input class="form-check-input" type="radio" name="lang" value="de"> Alemão
+			        </div>
+			        <div class="form-group">
+			           	<select class="form-control" id="estado" name="estado">
+						    <option value="AC">Acre</option>
+						    <option value="AL">Alagoas</option>
+						    <option value="AP">Amapá</option>
+						    <option value="AM">Amazonas</option>
+						    <option value="BA">Bahia</option>
+						    <option value="CE">Ceará</option>
+						    <option value="DF">Distrito Federal</option>
+						    <option value="ES">Espírito Santo</option>
+						    <option value="GO">Goiás</option>
+						    <option value="MA">Maranhão</option>
+						    <option value="MT">Mato Grosso</option>
+						    <option value="MS">Mato Grosso do Sul</option>
+						    <option value="MG">Minas Gerais</option>
+						    <option value="PA">Pará</option>
+						    <option value="PB">Paraíba</option>
+						    <option value="PR">Paraná</option>
+						    <option value="PE">Pernambuco</option>
+						    <option value="PI">Piauí</option>
+						    <option value="RJ">Rio de Janeiro</option>
+						    <option value="RN">Rio Grande do Norte</option>
+						    <option value="RS">Rio Grande do Sul</option>
+						    <option value="RO">Rondônia</option>
+						    <option value="RR">Roraima</option>
+						    <option value="SC">Santa Catarina</option>
+						    <option value="SP">São Paulo</option>
+						    <option value="SE">Sergipe</option>
+						    <option value="TO">Tocantins</option>
+						    <option value="EX">Estrangeiro</option>
+				   		</select>
+					  </div>
+		           <input type="submit" class="btn btn-primary" value="Cumprimentar"/>
+		        </form>
+	        </div>
     	</section>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     </body>
