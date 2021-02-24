@@ -9,17 +9,80 @@ and open the template in the editor.
         <title>Formulário de HelloWorld (usando o HelloServlet.java)</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        
+        <style>
+        	body{
+        		font-family: 'Roboto', sans-serif;
+        	}
+        	.form-group{
+        		margin-bottom: 15px;
+        	}
+        	h2{
+        		margin-bottom: 30px;
+        		margin-top: 30px;
+        	}
+        </style>
     </head>
     <body>
-        <div>Formulário de HelloWorld (usando o HelloServlet.java)</div>
-           <form action="alomundo" method="post">
-           <br>Idioma: <input type="radio" name="lang" value="pt" checked> Português
-           <input type="radio" name="lang" value="en"> Inglês
-           <input type="radio" name="lang" value="fr"> Francês
-           <input type="radio" name="lang" value="de"> Alemão<br><br>
-           Nome: <input type="text" name="nome"/><br><br>
-           <input type="submit" value="Cumprimentar"/>
-        </form>
-
+    	<section>
+    		<div class="container">
+	        	<h2>Formulário de HelloWorld (usando o HelloServlet.java)</h2>
+	           	<form action="alomundo" method="post">
+		           <div class="form-group">
+			        	<label for="nome">Nome:</label> 
+			        	<input type="text" name="nome" class="form-control"/>
+		        	</div>
+		        	<div class="form-group">
+					    <label for="email">Email:</label>
+					    <input type="email" class="form-control" id="email" name="email">
+					</div>
+		           <div class="form-group">
+			           	<label for="nome">Idioma:</label> 
+			           	<input class="form-check-input" type="radio" name="lang" value="pt" checked> Português
+			           	<input class="form-check-input" type="radio" name="lang" value="en"> Inglês
+			           	<input class="form-check-input" type="radio" name="lang" value="fr"> Francês
+			           	<input class="form-check-input" type="radio" name="lang" value="de"> Alemão
+			        </div>
+			        <div class="form-group">
+			        	<label for="nome">Selecine seu estado:</label> 
+			           	<select class="form-control" id="estado" name="estado">
+						    <option value="AC">Acre</option>
+						    <option value="AL">Alagoas</option>
+						    <option value="AP">Amapá</option>
+						    <option value="AM">Amazonas</option>
+						    <option value="BA">Bahia</option>
+						    <option value="CE">Ceará</option>
+						    <option value="DF">Distrito Federal</option>
+						    <option value="ES">Espírito Santo</option>
+						    <option value="GO">Goiás</option>
+						    <option value="MA">Maranhão</option>
+						    <option value="MT">Mato Grosso</option>
+						    <option value="MS">Mato Grosso do Sul</option>
+						    <option value="MG">Minas Gerais</option>
+						    <option value="PA">Pará</option>
+						    <option value="PB">Paraíba</option>
+						    <option value="PR">Paraná</option>
+						    <option value="PE">Pernambuco</option>
+						    <option value="PI">Piauí</option>
+						    <option value="RJ">Rio de Janeiro</option>
+						    <option value="RN">Rio Grande do Norte</option>
+						    <option value="RS">Rio Grande do Sul</option>
+						    <option value="RO">Rondônia</option>
+						    <option value="RR">Roraima</option>
+						    <option value="SC">Santa Catarina</option>
+						    <option value="SP">São Paulo</option>
+						    <option value="SE">Sergipe</option>
+						    <option value="TO">Tocantins</option>
+						    <option value="EX">Estrangeiro</option>
+				   		</select>
+		           
+		           <input type="submit" value="Cumprimentar"/>
+	        	</form>
+	        </div>
+        </section>
     </body>
 </html>
