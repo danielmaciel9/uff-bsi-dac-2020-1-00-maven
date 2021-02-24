@@ -83,6 +83,12 @@ public class HelloServlet extends HttpServlet {
         if(nome==null)
             nome = "Fulano";
         
+        if(email==null)
+            email = "email@fulano.com";
+        
+        if(estado==null)
+            estado = "Rio de Janeiro";
+        
         msg = msg+nome+email+estado+"!";
 
         response.setContentType("text/html;charset=UTF-8");
@@ -133,11 +139,19 @@ public class HelloServlet extends HttpServlet {
         }
         
         String nome = request.getParameter("nome");
+        String email = request.getParameter("email");
+        String estado = request.getParameter("estado");
 
         if(nome==null)
             nome = "Fulano";
         
-        msg = msg+nome+"!";
+        if(email==null)
+            email = "email@fulano.com";
+        
+        if(estado==null)
+            estado = "Rio de Janeiro";
+        
+        msg = msg+nome+email+estado+"!";
 
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
