@@ -29,6 +29,8 @@
         	}
         	h3{
         		margin-top: 15px;
+        		font-size: 24px;
+    			font-weight: 700;
         	}
         </style>
     </head>
@@ -36,7 +38,7 @@
     	<section>
     		<div class="container">
 		        <jsp:useBean id="myBean" class="hello.MessageBean"/>
-		        <h1>SayHello.jsp</h1>
+		        <h2>SayHello.jsp</h2>
 		        <% String lang = request.getParameter("lang"); %>
 		        <jsp:setProperty name="myBean" property="msg" value="<%=lang%>"/>
 		        <h3>Seu nome é:</h3> 
